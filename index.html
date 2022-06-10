@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>네이버 로그인 화면 만들기</title>
+
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+        }
+        #header{
+            padding-top: 100px;
+            text-align: center;
+        }
+        #wrap{
+            
+            width: 700px;
+            margin: 0 auto;
+        }
+        #footer{
+            color: grey;
+            text-align: center;
+        }
+        #main{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #logbox{
+            border: 1px solid lightgray;
+            height: 350px;
+            width: 500px;
+            margin: 0 auto;
+           margin-bottom: 20px;
+           padding-top: 10px;
+           
+             
+        }
+        
+      #naver{
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 300px;
+          padding-bottom: 50px;
+      }
+      a{
+          text-decoration: 0;
+          color: gray;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+          
+      }
+      .lost:link{
+          color: gray
+      }
+      .lost:visited{
+          color: gray
+      }
+      .lost::after{
+          content: ' | ';
+      }
+     #lasta{
+         content: none;
+     }
+     #login{
+         width: 350px;
+         height: 50px;
+         background-color: lightgreen;
+         color: white;
+         border: 0px;
+         margin-top: 10px;
+     }
+     #banner{
+         width: 550px;
+         border: 1px solid lightgray;
+         margin-top: 15px;
+     }
+     #sman{
+         height: 20px;
+         vertical-align: mi;
+     }
+     #logv{
+         border: 1px solid lightgray;
+         font-size: 22px;
+         color: gray
+     }
+     #keep{
+         margin-top: 5px;
+         display: flex;
+         justify-content: space-around;
+         
+     }
+     #loginbox{
+         width: 400px; height: 50px;
+         
+        
+     }
+    #select{
+    text-align: right;
+    }
+    #ipm{
+        width: 25px;
+    }
+   
+  
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <div id="select">
+        <select>
+            <option value="한국어">한국어</option>
+            <option value="영어">영어</option>
+        </select>
+    </div>
+        <div id="header"><img id="naver" src="naver.png" alt=""></div>
+
+        <div id="main">
+
+    <div id="logbox">
+        <a id="logv" href="#">ID로그인</a><a id="logv" href="#">일회용 번호</a><a id="logv" href="#">QR코드</a><br>
+       <img src="person.png" alt=""> <input id="loginbox" type="text" placeholder="아이디"><br>
+       <img src="pw.png" alt=""> <input id="loginbox" type="password" placeholder="비밀번호"><br>
+
+    <div id="keep">
+       <div><input id="check" type="checkbox">로그인 상태 유지</div>
+       <p id="ip"> <img id="ipm" src="radio2.png" alt="">IP보안</p>
+    </div>
+        <input id="login" type="submit" value="로그인">
+    </div>
+
+        <a class="lost" href="#">비밀번호 찾기</a><a  class="lost" href="#">아이디 찾기</a><a class="lost" id="lasta" href="#">회원가입</a>
+       
+        <img id="banner" src="banner2.jpg" alt="">
+    
+    </div>
+
+        <div id="footer"><p>이용약관 개인정보처리방침 책임의 한계와 법적고지 회원정보 고객센터<p>
+            <div><img id="sman" src="small_naver.png" alt="">© NAVER Corp.All Rights Reserved</div>
+        </div>
+    </div>
+</body>
+</html>
